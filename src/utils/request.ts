@@ -66,6 +66,7 @@ const methodV = async ({
           resolve({ data, code: status });
         })
         .catch((error) => {
+          console.log(error)
           reject(error);
         });
     });
