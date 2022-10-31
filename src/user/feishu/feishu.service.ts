@@ -40,7 +40,6 @@ export class FeishuService {
 
   async sendMessage(receive_id_type, params) {
     const app_token = await this.getAppToken();
-    console.log(app_token)
     return messages(receive_id_type, params, app_token as string);
   }
 }
